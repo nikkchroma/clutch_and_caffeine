@@ -67,6 +67,49 @@ body{
   color:#aaa;
 }
 
+/* HERO VIDEO FIX */
+.hero{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.hero-bg video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #000 10%, transparent 60%);
+  z-index: 1;
+}
+
+/* CONTENT FIX (IMPORTANT) */
+.hero-content{
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+/* BUTTON SPACING FIX */
+.hero-buttons{
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 /* BUTTONS */
 .hero-buttons{
   margin-top:30px;
