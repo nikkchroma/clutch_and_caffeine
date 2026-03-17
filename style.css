@@ -1,0 +1,155 @@
+:root{
+  --bg:#050505;
+  --card:#111;
+  --gold:#D4AF37;
+  --text:#fff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+}
+
+/* NAV */
+.navbar{
+  position:fixed;
+  width:100%;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  backdrop-filter:blur(10px);
+}
+
+.nav-container{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo span{color:var(--gold);}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.nav-links a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{
+  height:100vh;
+  position:relative;
+}
+
+.hero-bg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,#000,transparent);
+}
+
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+.hero h1{
+  font-size:4rem;
+}
+
+.hero span{color:var(--gold);}
+
+/* BUTTONS */
+.btn{
+  padding:10px 20px;
+  margin:10px;
+  border-radius:50px;
+}
+
+.primary{
+  background:var(--gold);
+  color:#000;
+}
+
+.secondary{
+  border:1px solid var(--gold);
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 20px;
+}
+
+.dark{background:#0a0a0a;}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+/* EVENTS */
+.events{
+  display:flex;
+  gap:20px;
+}
+
+.event-card{
+  background:var(--card);
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.event-card:hover{
+  transform:translateY(-10px);
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1);
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
