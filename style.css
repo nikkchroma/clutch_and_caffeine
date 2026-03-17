@@ -128,3 +128,34 @@ body{
 .grid img:hover{
   transform:scale(1.1);
 }
+
+/* About */
+.about{
+  max-width:800px;
+}
+
+.big-text{
+  font-size:1.5rem;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.philo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+}
+
+.philo-grid h3{
+  color:#d4af37;
+  margin-bottom:10px;
+}
+
+.cta{
+  text-align:center;
+}
+
+.cta p{
+  margin:20px 0;
+  color:#aaa;
+}
