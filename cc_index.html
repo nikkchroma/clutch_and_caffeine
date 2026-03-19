@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLUTCH & CAFFEINE — Fuel Your Passion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <div class="nav-logo-wrap">
+        <span class="nav-logo-bracket">[</span>
+        <a href="#hero" class="nav-logo">C<span>&</span>C</a>
+        <span class="nav-logo-bracket">]</span>
+      </div>
+      <div class="nav-sys-info">
+        <span class="sys-tag" id="sysTime">00:00:00</span>
+        <span class="sys-dot"></span>
+        <span class="sys-tag">SYSTEM ONLINE</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="link-num">01.</span>ABOUT</a></li>
+      <li><a href="#events"><span class="link-num">02.</span>EVENTS</a></li>
+      <li><a href="#gallery"><span class="link-num">03.</span>GALLERY</a></li>
+      <li><a href="#community"><span class="link-num">04.</span>JOIN</a></li>
+    </ul>
+    <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="nav-cta">// ACCESS IG</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">01. ABOUT</a></li>
+      <li><a href="#events" onclick="closeMobileNav()">02. EVENTS</a></li>
+      <li><a href="#gallery" onclick="closeMobileNav()">03. GALLERY</a></li>
+      <li><a href="#community" onclick="closeMobileNav()">04. JOIN</a></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 01 — HERO -->
+  <section class="full-section" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="hud-bar hud-top">
+      <span class="hud-item">LAT: 13.0827° N</span>
+      <span class="hud-sep">|</span>
+      <span class="hud-item">LNG: 80.2707° E</span>
+      <span class="hud-sep">|</span>
+      <span class="hud-item">CHENNAI // INDIA</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-pre">
+        <span class="pre-line"></span>
+        <span class="pre-text">SYSTEM BOOT :: CLUTCH_CAFFEINE.EXE</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line glitch-text" data-text="FUEL">FUEL</span>
+        <span class="title-line glitch-text gold" data-text="YOUR">YOUR</span>
+        <span class="title-line glitch-text" data-text="PASSION">PASSION</span>
+      </h1>
+      <div class="hero-sub">
+        <span class="type-text" id="typeText"></span><span class="type-cursor">_</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#events" class="btn-cyber">
+          <span class="btn-cyber-inner">ENTER THE GRID</span>
+          <span class="btn-cyber-glitch">ENTER THE GRID</span>
+        </a>
+        <a href="#gallery" class="btn-cyber-outline">VIEW ARCHIVE</a>
+      </div>
+    </div>
+
+    <div class="hud-bar hud-bottom">
+      <span class="hud-item">ENGINES: ACTIVE</span>
+      <span class="hud-sep">|</span>
+      <span class="hud-item">CAFFEINE: LOADED</span>
+      <span class="hud-sep">|</span>
+      <span class="hud-item">STATUS: <span class="hud-gold blink-text">● ONLINE</span></span>
+    </div>
+
+    <div class="scroll-cue">
+      <span class="scroll-label">SCROLL //</span>
+      <div class="scroll-bar"><div class="scroll-fill"></div></div>
+    </div>
+
+    <!-- SVG Connector -->
+    <svg class="section-svg" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline class="svg-line" points="0,0 400,0 600,80 1440,80" />
+    </svg>
+  </section>
+
+  <!-- SECTION 02 — ABOUT -->
+  <section class="full-section dark-section" id="about">
+    <div class="section-grid-bg"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="section-num-bg">02</div>
+
+    <div class="about-layout">
+      <div class="about-left-col">
+        <div class="sys-label">// WHO_WE_ARE.TXT</div>
+        <h2 class="section-heading">STARTED<br>WITH A<br><span class="gold-text">CUP.</span></h2>
+        <div class="data-block">
+          <div class="data-line"><span class="data-key">FOUNDED</span><span class="data-val">2022</span></div>
+          <div class="data-line"><span class="data-key">LOCATION</span><span class="data-val">CHENNAI, TN</span></div>
+          <div class="data-line"><span class="data-key">STATUS</span><span class="data-val blink-text">ACTIVE ●</span></div>
+          <div class="data-line"><span class="data-key">TYPE</span><span class="data-val">BIKES + CARS + COFFEE</span></div>
+        </div>
+      </div>
+      <div class="about-right-col">
+        <div class="about-text-block">
+          <p>It started with a simple idea — <strong>bring riders together over coffee.</strong> What followed was something bigger than anyone expected.</p>
+          <p>Clutch & Caffeine is a growing automotive culture built on machines, music, and raw energy. From sunrise rides to midnight runs — we don't host events, we create <span class="gold-text">experiences.</span></p>
+        </div>
+        <div class="pillar-grid">
+          <div class="pillar-card tilt-card">
+            <div class="pillar-card-inner">
+              <div class="pillar-icon">⚡</div>
+              <div class="pillar-title">COMMUNITY</div>
+              <div class="pillar-desc">Strangers pull up. Family leaves.</div>
+            </div>
+            <div class="pillar-glow"></div>
+          </div>
+          <div class="pillar-card tilt-card">
+            <div class="pillar-card-inner">
+              <div class="pillar-icon">☕</div>
+              <div class="pillar-title">EXPERIENCE</div>
+              <div class="pillar-desc">Coffee. Machines. Music. All in one.</div>
+            </div>
+            <div class="pillar-glow"></div>
+          </div>
+          <div class="pillar-card tilt-card">
+            <div class="pillar-card-inner">
+              <div class="pillar-icon">🔥</div>
+              <div class="pillar-title">ENERGY</div>
+              <div class="pillar-desc">Every meet hits harder than the last.</div>
+            </div>
+            <div class="pillar-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="section-svg" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline class="svg-line" points="0,80 500,80 700,0 1440,0" />
+    </svg>
+  </section>
+
+  <!-- SECTION 03 — EVENTS -->
+  <section class="full-section" id="events">
+    <div class="hero-grid-bg"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="section-num-bg">03</div>
+
+    <div class="section-header">
+      <div class="sys-label">// EVENTS_CALENDAR.SYS</div>
+      <h2 class="section-heading">UPCOMING<br><span class="gold-text">EVENTS</span></h2>
+    </div>
+
+    <div class="events-cyber-grid">
+      <div class="ecc tilt-card featured-card">
+        <div class="ecc-img"><img src="images/event1.jpg" alt="Vol 3" onerror="this.parentElement.classList.add('no-img')" /><div class="ecc-img-overlay"></div></div>
+        <div class="ecc-body">
+          <div class="ecc-top"><span class="ecc-badge">// FEATURED</span><span class="ecc-status blink-text">● UPCOMING</span></div>
+          <div class="ecc-name">C&C <span class="gold-text">VOL. 03</span></div>
+          <div class="ecc-info">
+            <div class="ecc-row"><span class="ecc-key">DATE</span><span class="ecc-val">TBA — 2025</span></div>
+            <div class="ecc-row"><span class="ecc-key">LOCATION</span><span class="ecc-val">CHENNAI, TN</span></div>
+            <div class="ecc-row"><span class="ecc-key">FORMAT</span><span class="ecc-val">BIKES + CARS + COFFEE</span></div>
+            <div class="ecc-row"><span class="ecc-key">ENTRY</span><span class="ecc-val gold-text">TBA</span></div>
+          </div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-cyber small">ACCESS INFO</a>
+        </div>
+        <div class="ecc-corner"></div>
+      </div>
+
+      <div class="ecc tilt-card">
+        <div class="ecc-img"><img src="images/event2.jpg" alt="Sunrise Ride" onerror="this.parentElement.classList.add('no-img')" /><div class="ecc-img-overlay"></div></div>
+        <div class="ecc-body">
+          <div class="ecc-top"><span class="ecc-badge outline">// UPCOMING</span><span class="ecc-status">● OPEN</span></div>
+          <div class="ecc-name">SUNRISE <span class="gold-text">RIDE</span></div>
+          <div class="ecc-info">
+            <div class="ecc-row"><span class="ecc-key">DATE</span><span class="ecc-val">STAY TUNED</span></div>
+            <div class="ecc-row"><span class="ecc-key">LOCATION</span><span class="ecc-val">ECR, CHENNAI</span></div>
+            <div class="ecc-row"><span class="ecc-key">ENTRY</span><span class="ecc-val gold-text">FREE</span></div>
+          </div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-cyber small">GET NOTIFIED</a>
+        </div>
+        <div class="ecc-corner"></div>
+      </div>
+
+      <div class="ecc tilt-card">
+        <div class="ecc-img"><img src="images/event3.jpg" alt="Vol 2" onerror="this.parentElement.classList.add('no-img')" /><div class="ecc-img-overlay"></div></div>
+        <div class="ecc-body">
+          <div class="ecc-top"><span class="ecc-badge dim">// ARCHIVED</span><span class="ecc-status dim">● CLOSED</span></div>
+          <div class="ecc-name">C&C <span class="gold-text">VOL. 02</span></div>
+          <div class="ecc-info">
+            <div class="ecc-row"><span class="ecc-key">DATE</span><span class="ecc-val">2024</span></div>
+            <div class="ecc-row"><span class="ecc-key">STATUS</span><span class="ecc-val">SOLD OUT</span></div>
+          </div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-cyber small outline">VIEW ARCHIVE</a>
+        </div>
+        <div class="ecc-corner"></div>
+      </div>
+    </div>
+
+    <svg class="section-svg" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline class="svg-line" points="0,0 300,0 500,80 1440,80" />
+    </svg>
+  </section>
+
+  <!-- SECTION 04 — GALLERY -->
+  <section class="full-section dark-section" id="gallery">
+    <div class="section-grid-bg"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="section-num-bg">04</div>
+
+    <div class="section-header">
+      <div class="sys-label">// MEDIA_ARCHIVE.DAT</div>
+      <h2 class="section-heading">THE <span class="gold-text">ARCHIVE</span></h2>
+    </div>
+
+    <div class="gallery-cyber-grid">
+      <div class="gcg-item gcg-tall tilt-card"><img src="images/g1.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+      <div class="gcg-item tilt-card"><img src="images/g2.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+      <div class="gcg-item tilt-card"><img src="images/g3.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+      <div class="gcg-item gcg-wide tilt-card"><img src="images/g4.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+      <div class="gcg-item tilt-card"><img src="images/g5.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+      <div class="gcg-item tilt-card"><img src="images/g6.jpg" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /><div class="gcg-overlay"><span>VIEW //</span></div></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lightboxClose">[ ✕ ]</button>
+      <button class="lb-prev" id="lightboxPrev">[ ‹ ]</button>
+      <button class="lb-next" id="lightboxNext">[ › ]</button>
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+
+    <svg class="section-svg" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline class="svg-line" points="0,80 600,80 800,0 1440,0" />
+    </svg>
+  </section>
+
+  <!-- SECTION 05 — COMMUNITY -->
+  <section class="full-section" id="community">
+    <div class="hero-grid-bg"></div>
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+    <div class="section-num-bg">05</div>
+
+    <div class="community-cyber">
+      <div class="sys-label">// FINAL_TRANSMISSION.EXE</div>
+      <h2 class="comm-title glitch-text" data-text="THIS IS NOT AN EVENT">THIS IS NOT AN EVENT</h2>
+      <div class="comm-subtitle">IT'S A <span class="gold-text">CULTURE.</span></div>
+      <p class="comm-desc">Every machine has a story. Every rider has a reason. Come as a stranger — leave as family. The next chapter is being written. Make sure you're in it.</p>
+
+      <div class="comm-stats">
+        <div class="c-stat tilt-card"><div class="c-stat-num" data-target="3">0</div><div class="c-stat-label">VOLUMES</div></div>
+        <div class="c-stat tilt-card"><div class="c-stat-num" data-target="500">0</div><div class="c-stat-label">RIDERS</div></div>
+        <div class="c-stat tilt-card"><div class="c-stat-num" data-target="10">0</div><div class="c-stat-label">MEETS</div></div>
+      </div>
+
+      <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-cyber large">
+        <span class="btn-cyber-inner">JOIN THE MOVEMENT</span>
+        <span class="btn-cyber-glitch">JOIN THE MOVEMENT</span>
+      </a>
+
+      <div class="comm-footer-line">
+        <span>@clutch_caffeine</span>
+        <span class="gold-text">//</span>
+        <span>CHENNAI, INDIA</span>
+        <span class="gold-text">//</span>
+        <span class="blink-text">● ONLINE</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
