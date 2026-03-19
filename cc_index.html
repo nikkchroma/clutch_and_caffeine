@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clutch & Caffeine — Engines. Coffee. Chaos. Chennai's premier bike & car culture community." />
+  <title>CLUTCH & CAFFEINE — Fuel Your Passion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Barlow+Condensed:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo" data-text="CLUTCH&CAFFEINE">CLUTCH<span>&</span>CAFFEINE</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="nav-cta">Join Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="#events" onclick="closeMobileNav()">Events</a></li>
+      <li><a href="#gallery" onclick="closeMobileNav()">Gallery</a></li>
+      <li><a href="#community" onclick="closeMobileNav()">Community</a></li>
+      <li><a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="mobile-cta" onclick="closeMobileNav()">Join Us</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <!--
+    🎬 VIDEO: place your video at images/hero-video.mp4
+    🖼 POSTER: place a still frame at images/hero-poster.jpg
+  -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video id="heroVideo" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+        <source src="images/hero-video.mp4" type="video/mp4">
+        <source src="images/hero-video.webm" type="video/webm">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Engines · Coffee · Chaos</div>
+      <h1 class="hero-h1">
+        FUEL<br>YOUR<br><span class="accent">PASSION.</span>
+      </h1>
+      <p class="hero-sub">
+        Clutch & Caffeine is not an event. It's a culture built on machines, music, and the kind of raw energy that hits different every single time.
+      </p>
+      <div class="hero-actions">
+        <a href="#events" class="btn-primary">Upcoming Events</a>
+        <a href="#about" class="btn-ghost">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">3+</div>
+        <div class="hero-stat-label">Volumes</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">500+</div>
+        <div class="hero-stat-label">Riders</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">∞</div>
+        <div class="hero-stat-label">Memories</div>
+      </div>
+    </div>
+
+    <button class="video-toggle" id="videoToggle" title="Toggle sound">
+      <svg id="iconMuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      <svg id="iconUnmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+    </button>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">Clutch & Caffeine</span>
+      <span class="ticker-item">Engines</span>
+      <span class="ticker-item">Coffee</span>
+      <span class="ticker-item">Chaos</span>
+      <span class="ticker-item">Bike Meets</span>
+      <span class="ticker-item">Car Culture</span>
+      <span class="ticker-item">Sunrise Rides</span>
+      <span class="ticker-item">Midnight Runs</span>
+      <span class="ticker-item">Clutch & Caffeine</span>
+      <span class="ticker-item">Engines</span>
+      <span class="ticker-item">Coffee</span>
+      <span class="ticker-item">Chaos</span>
+      <span class="ticker-item">Bike Meets</span>
+      <span class="ticker-item">Car Culture</span>
+      <span class="ticker-item">Sunrise Rides</span>
+      <span class="ticker-item">Midnight Runs</span>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title">STARTED<br>WITH A CUP.<br>BUILT A <span style="color:var(--gold)">CULTURE.</span></h2>
+      </div>
+      <div class="about-right">
+        <div class="about-text">
+          <p>It started with a simple idea — <strong>bring riders together over coffee.</strong> What followed was something bigger than any of us expected.</p>
+          <p>Clutch & Caffeine is now a growing automotive culture built on machines, music, and raw energy. From sunrise rides to midnight runs, we don't host events — we create experiences.</p>
+          <p>Strangers pull up. Family leaves. That's the Clutch & Caffeine way.</p>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-num">01</div>
+            <div>
+              <div class="pillar-title">Community</div>
+              <div class="pillar-desc">Strangers pull up. Family leaves. Every meet builds something that lasts longer than the fuel in your tank.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">02</div>
+            <div>
+              <div class="pillar-title">Experience</div>
+              <div class="pillar-desc">Coffee. Machines. Music. All in one moment. We curate experiences that you can't find anywhere else.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">03</div>
+            <div>
+              <div class="pillar-title">Energy</div>
+              <div class="pillar-desc">Every meet hits harder than the last. The energy is real, the people are real, and the machines are loud.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NUMBERS ===================== -->
+  <div id="numbers">
+    <div class="numbers-grid">
+      <div class="number-item"><div class="number-val" data-target="3">0</div><div class="number-label">Volumes Completed</div></div>
+      <div class="number-item"><div class="number-val" data-target="500">0</div><div class="number-label">Riders & Drivers</div></div>
+      <div class="number-item"><div class="number-val" data-target="10">0</div><div class="number-label">Meets Hosted</div></div>
+      <div class="number-item"><div class="number-val" data-target="100">0</div><div class="number-label">Machines Showcased</div></div>
+    </div>
+  </div>
+
+  <!-- ===================== EVENTS ===================== -->
+  <!--
+    📸 Event images: place in images/ folder
+    event1.jpg, event2.jpg, event3.jpg
+  -->
+  <section id="events">
+    <div class="events-header">
+      <div>
+        <div class="section-label">On The Calendar</div>
+        <h2 class="section-title">EVENTS</h2>
+      </div>
+      <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-ghost">Follow for Updates</a>
+    </div>
+
+    <div class="events-grid">
+
+      <div class="event-card featured">
+        <div class="event-card-img">
+          <img src="images/event1.jpg" alt="Clutch & Caffeine Vol. 3" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        </div>
+        <div class="event-card-body">
+          <span class="event-badge">Coming Soon</span>
+          <div class="event-date">📅 Stay Tuned — 2025</div>
+          <div class="event-name">CLUTCH & CAFFEINE VOL. 3</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="ico">📍</span> Chennai, Tamil Nadu</div>
+            <div class="event-detail"><span class="ico">🏍</span> Bikes & Cars Welcome</div>
+            <div class="event-detail"><span class="ico">☕</span> Coffee & Chaos Included</div>
+          </div>
+          <div class="event-price">TBA <span>/ entry</span></div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-ticket">Notify Me</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-card-img">
+          <img src="images/event2.jpg" alt="Sunrise Ride" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        </div>
+        <div class="event-card-body">
+          <span class="event-badge upcoming">Upcoming</span>
+          <div class="event-date">📅 Stay Tuned</div>
+          <div class="event-name">SUNRISE RIDE</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="ico">📍</span> ECR, Chennai</div>
+            <div class="event-detail"><span class="ico">🌅</span> Dawn Format</div>
+            <div class="event-detail"><span class="ico">☕</span> Coffee Included</div>
+          </div>
+          <div class="event-price">Free <span>/ entry</span></div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-ticket">Get Notified</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-card-img">
+          <img src="images/event3.jpg" alt="Clutch & Caffeine Vol. 2" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        </div>
+        <div class="event-card-body">
+          <span class="event-badge past">Past Event</span>
+          <div class="event-date">📅 2024</div>
+          <div class="event-name">CLUTCH & CAFFEINE VOL. 2</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="ico">📍</span> Chennai</div>
+            <div class="event-detail"><span class="ico">🏆</span> Show & Shine</div>
+            <div class="event-detail"><span class="ico">🎉</span> Sold Out</div>
+          </div>
+          <div class="event-price">—</div>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-ticket outline">View Recap →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <!--
+    📸 GALLERY: place images in images/ folder
+    g1.jpg through g9.jpg
+  -->
+  <section id="gallery">
+    <div class="gallery-header">
+      <div>
+        <div class="section-label">The Moments</div>
+        <h2 class="section-title">GALLERY</h2>
+      </div>
+      <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-ghost">Follow on IG →</a>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="images/g1.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/g2.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/g3.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="images/g4.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/g5.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/g6.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="images/g7.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/g8.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/g9.jpg" alt="Clutch & Caffeine" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="gallery-hover"><span>View</span></div>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev">‹</button>
+      <button class="lightbox-next" id="lightboxNext">›</button>
+      <img src="" alt="Gallery" id="lightboxImg" />
+    </div>
+  </section>
+
+  <!-- ===================== COMMUNITY ===================== -->
+  <section id="community">
+    <div class="community-banner">
+      <div class="community-banner-text">
+        <div class="section-label">Be Part Of It</div>
+        <h2 class="section-title">THIS IS NOT<br>AN EVENT.<br>IT'S A <span style="color:var(--gold)">CULTURE.</span></h2>
+        <p>Every machine has a story. Every rider has a reason. Come as a stranger, leave as family. The next chapter is being written — make sure you're in it.</p>
+        <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="btn-primary">Join The Movement →</a>
+      </div>
+      <div class="community-stats">
+        <div class="community-stat">
+          <div class="c-stat-num">@clutch_caffeine</div>
+          <div class="c-stat-label">Follow us on Instagram</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">CLUTCH<span>&</span>CAFFEINE</div>
+        <p>Engines. Coffee. Chaos. Chennai's growing automotive culture built on machines, music, and raw energy.</p>
+        <div class="social-icons" style="margin-top:20px;">
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="social-icon">IG</a>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="social-icon">YT</a>
+          <a href="https://www.instagram.com/clutch_caffeine" target="_blank" class="social-icon">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/clutch_caffeine" target="_blank">Instagram</a></li>
+          <li><a href="mailto:hello@clutchandcaffeine.com">Contact Us</a></li>
+          <li><a href="#events">Sponsor an Event</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Clutch & Caffeine. All rights reserved.</p>
+      <div class="city"><div class="city-dot"></div>Chennai, Tamil Nadu, India</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
